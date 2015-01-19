@@ -1,0 +1,12 @@
+consider a method which calculates and returns the following series:
+S(i) = 1 + 1/22 + 1/32+ 1/42 + 1/52 … + 1/i2 .
+
+The argument (i) has to be provided by user. The output is the value of S(i) which should be displayed either in the output window of the IDE, or in 
+a GUI (however, designing a GUI is not mandatory, and your work is considered for full grade without a GUI).
+
+a)  Design and implement seriesIter, the iterative version of the method.
+b)  Design and implement seriesRec, the recursive version of the method.
+c)  Write a driver program TestSeriesVal.java to test the two methods.
+
+Submission requirements
+Your completed assignment consists of all the java files and an output sample (the result obtained in the output window of the IDE) wrapped in a zip archive. Name the archive Hw1_your_name (if I were you, it would be Hw1_Rodica_Potolea.zip)
