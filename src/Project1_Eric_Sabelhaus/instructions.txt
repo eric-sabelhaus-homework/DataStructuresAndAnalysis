@@ -1,0 +1,45 @@
+Security check line at the airport
+
+Requirements: Visualize how the line evolves during time.
+
+Approach: Assume you are at the airport, waiting for the security check. 
+There is one line (which is a FIFO queue), and 5 security check gates. 
+Each person reaching in front of the queue is checked by the first available security gate. 
+Each security check gate has its pace of handling passengers, as follows: 
+	gate #1, 1 person/minute 
+	gates #2 and #3, 2 persons/minute
+	gates #4 and #5, 3 persons/minute.
+	 
+Assume that initially there are 20 people in the line and each minute other 10 people are coming to the line. 
+Show the evolution of the line in the first 10 minutes: 
+	use a queue to model the line, 
+	add the initial passengers (give them names Passenger1, Passenger2, …, Passenger20), 
+	and start distributing them to security check gates every minute. 
+
+In each minute (for 10 minutes), show the status as follows:
+
+Content of the line (the queue) at the beginning, 
+and at end of the given minute (remember that each minute other 10 passengers enter the line);
+Content (that is people checked) of each of the 5 security check gates during the given minute.
+ 
+The status should be displayed in the output window of the IDE, or in a GUI 
+(however, designing a GUI is not mandatory, and your work is considered for full grade without a GUI).
+ 
+Deliverables: You should submit 
+	(1) all the source (.java) files, 
+	(2) an output sample (screenshot showing program execution and the results of your testing) and 
+	(3) a document file describing your solution. 
+The solution description document should include the following elements: 
+	a short problem analysis, 
+	main design decisions, 
+	assumptions, 
+	description of classes, 
+	user interface, 
+	testing and test cases, 
+	error handling and lessons learned. 
+
+The size of the document should be of 3 pages, single spaced, font size 12. 
+All solution description elements should be properly formatted using APA style.
+
+Wrapp all the files in a single .zip archive and name it Project1_your_name.zip 
+(if I were you, it would be Project1_Rodica_Potolea.zip).
