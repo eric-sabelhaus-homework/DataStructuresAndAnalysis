@@ -1,18 +1,26 @@
 package Project1_Eric_Sabelhaus;
+import static org.junit.Assert.*;
+import junit.framework.AssertionFailedError;
+
+import org.junit.Test;
 
 public class TestAirportLine {
 	/**
 	 * @param args
 	 * @throws InterruptedException 
 	 */
-	public static void main(String[] args) throws InterruptedException {
+	
+	@Test
+	public void testPassing(){
 		//instantiate guards
 		SecurityGuard guard1 = new SecurityGuard(1);
 		SecurityGuard guard2 = new SecurityGuard(2);
 		SecurityGuard guard3 = new SecurityGuard(2);
 		SecurityGuard guard4 = new SecurityGuard(3);
 		SecurityGuard guard5 = new SecurityGuard(3);
-
+		
+		
+		
 		//instantiate line
 		SecurityLine line = new SecurityLine();
 		
@@ -44,6 +52,20 @@ public class TestAirportLine {
 			//print stack if exception occurs during runtime
 			e.printStackTrace();
 		}
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testGuardFailing(){
+		SecurityGuard failGuard = new SecurityGuard(0);
+		SecurityGuard passGuard = new SecurityGuard(1);
+		passGuard.setNumberPersons(0);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testLineFailing(){
+		SecurityLine testLine = new SecurityLine();
+		testLine.addPeople(0);
+		testLine.removePeople(0);
 	}
 
 }

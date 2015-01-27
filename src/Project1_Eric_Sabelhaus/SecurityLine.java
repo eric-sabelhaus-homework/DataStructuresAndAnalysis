@@ -26,7 +26,11 @@ public class SecurityLine {
 	}
 
 	//Add people to the end of the line
-	public void addPeople(int howMany) {
+	public void addPeople(int howMany) throws IllegalArgumentException {
+		if(howMany <= 0){
+			throw new IllegalArgumentException("Line cannot be updated with a non positive number");
+		}
+		
 		for(int i = 0; i < howMany; i++){
 			startingPoint++;
 			people.add("Passenger_" + startingPoint);
@@ -35,6 +39,10 @@ public class SecurityLine {
 	
 	//Remove people from the front of the line
 	public void removePeople(int howMany) {
+		if(howMany <= 0){
+			throw new IllegalArgumentException("Line cannot be updated with a non positive number");
+		}
+		
 		for(int i = 0; i < howMany; i++){
 			System.out.println("Checked: " + people.get(0));
 			people.remove(0);
