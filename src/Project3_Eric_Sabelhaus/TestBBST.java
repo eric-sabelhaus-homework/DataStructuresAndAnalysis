@@ -14,12 +14,20 @@ public class TestBBST {
 		test.insert(8, "baz");
 		test.insert(16, "qux");
 		test.insert(32, "norf");
-		test.insert(64, "floof");
+		test.insert(64, ":{D>");
 		test.insert(128, "woot");
 		test.insert(256, "aaaaayyyyyy!");
 		test.insert(512, "blang");
 		test.insert(1024, "el-kabong");
 		test.insert(2048, "1.21 jiggawats");
+		test.insert(4096, "random DATA");
+		test.insert(8192, "Dr. Who");
+		test.insert(16384, "Dalek");
+		test.insert(32768, "Cyber Men");
+		test.insert(65536, "rAnDoM dAtA");
+		test.insert(131072, "@_@");
+		test.insert(262144, "(╯°□°)╯︵ ┻━┻");
+		test.insert(524288, "┬─┬﻿ ノ( ゜-゜ノ)");
 		
 		/*
 		  	in-order traversal;
@@ -49,7 +57,7 @@ public class TestBBST {
 		System.out.println(test.getNumberOfLeaves());
 		System.out.println("\nget number of internal nodes\n");
 		System.out.println(test.getNumberOfInternalNodes());
-		System.out.println("\ninsert new node");
+		System.out.println("\ninsert new node\n");
 		test.insert(42, "The Answer To Everything That Is Anything");
 		System.out.println("retrieve current height\n");
 		System.out.println(test.height());
@@ -59,7 +67,7 @@ public class TestBBST {
 		System.out.println("begin pre order traversal\n");
 		test.pre();
 		System.out.println("\nend pre order traversal\n");
-		System.out.println("\nbegin post order traversal");
+		System.out.println("begin post order traversal");
 		test.post();
 		System.out.println("\nend post order traversal\n");
 		System.out.println("get number of leaves\n");
@@ -68,8 +76,4 @@ public class TestBBST {
 		System.out.println(test.getNumberOfInternalNodes());
 		
 	}
-	
-	
-	
-	
 }

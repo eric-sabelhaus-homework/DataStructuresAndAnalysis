@@ -1,0 +1,136 @@
+begin in order traversal
+
+1, foo
+2, bar
+4, bang
+8, baz
+16, qux
+32, norf
+64, :{D>
+128, woot
+256, aaaaayyyyyy!
+512, blang
+1024, el-kabong
+2048, 1.21 jiggawats
+4096, random DATA
+8192, Dr. Who
+16384, Dalek
+32768, Cyber Men
+65536, rAnDoM dAtA
+131072, @_@
+262144, (╯°□°)╯︵ ┻━┻
+524288, ┬─┬﻿ ノ( ゜-゜ノ)
+
+end in order traversal
+
+
+search for data at key 256
+
+aaaaayyyyyy!
+
+search for data at key 42
+
+null
+
+retrieve current height
+
+4
+
+get number of leaves
+
+10
+
+get number of internal nodes
+
+9
+
+insert new node
+
+retrieve current height
+
+4
+
+begin in order traversal
+
+1, foo
+2, bar
+4, bang
+8, baz
+16, qux
+32, norf
+42, The Answer To Everything That Is Anything
+64, :{D>
+128, woot
+256, aaaaayyyyyy!
+512, blang
+1024, el-kabong
+2048, 1.21 jiggawats
+4096, random DATA
+8192, Dr. Who
+16384, Dalek
+32768, Cyber Men
+65536, rAnDoM dAtA
+131072, @_@
+262144, (╯°□°)╯︵ ┻━┻
+524288, ┬─┬﻿ ノ( ゜-゜ノ)
+
+end in order traversal
+
+begin pre order traversal
+
+128, woot
+8, baz
+2, bar
+1, foo
+4, bang
+32, norf
+16, qux
+64, :{D>
+42, The Answer To Everything That Is Anything
+32768, Cyber Men
+2048, 1.21 jiggawats
+512, blang
+256, aaaaayyyyyy!
+1024, el-kabong
+8192, Dr. Who
+4096, random DATA
+16384, Dalek
+131072, @_@
+65536, rAnDoM dAtA
+524288, ┬─┬﻿ ノ( ゜-゜ノ)
+262144, (╯°□°)╯︵ ┻━┻
+
+end pre order traversal
+
+begin post order traversal
+1, foo
+4, bang
+2, bar
+16, qux
+42, The Answer To Everything That Is Anything
+64, :{D>
+32, norf
+8, baz
+256, aaaaayyyyyy!
+1024, el-kabong
+512, blang
+4096, random DATA
+16384, Dalek
+8192, Dr. Who
+2048, 1.21 jiggawats
+65536, rAnDoM dAtA
+262144, (╯°□°)╯︵ ┻━┻
+524288, ┬─┬﻿ ノ( ゜-゜ノ)
+131072, @_@
+32768, Cyber Men
+128, woot
+
+end post order traversal
+
+get number of leaves
+
+10
+
+get number of internal nodes
+
+9
