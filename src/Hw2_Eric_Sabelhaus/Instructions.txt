@@ -1,0 +1,44 @@
+Requirements: Compare the efficiency of Selection Sort and Insertion Sort.
+
+Approach: For doing this, you should evaluate their corresponding implementations 
+(their code is available under Content -> Previous Course Learning Modules -> 
+CMSC 230 Modules -> Module 6: Sorting and Hashing -> I Simple Sorts -> 
+C Selection Sort and D Insertion Sort) 
+
+in at least one case (best, worst, or average) 
+and count the number of type of operations performed (assignments, comparisons, and overall, separately). 
+For counting them, you need to add in the right place specific statements to 
+increment the counters for assignments and/or comparisons, wherever needed.
+
+Draw charts to show how the running time 
+(estimated in numbers of assignments A(n), comparisons C(n), and overall time T(n)=A(n) + C(n)) 
+grows as the size of the input data n is growing.  
+To draw the charts, 
+vary the input size (n) between 100 and 1000, 
+with an increment of maximum 100. 
+For each size, generate the appropriate input sequence (best, worst, or average)
+for the specific sorting method (be aware: best/worst cases are not 
+necessary the same for the two methods), run it, and store the values (A(n), C(n),  T(n)).
+
+In case the average case is your choice, you have to repeat the measurements m times 
+(m=5 should suffice) and report their average. Moreover, for the average case, 
+make sure you always use the same input sequence for both sorting methods for a fair comparison.
+
+For the analyzed case(s), generate charts which compare the two methods; 
+use different charts for the number of comparisons, number of assignments and 
+total number of operations. Name your charts and curves on each 
+chart appropriately (that is, specify what the chart/curve represents).
+
+Deliverables: You should submit 
+(1) all the source (.java) files, 
+(2) an output sample 
+	(screenshot showing program execution and the results of your testing, to show the methods are actually sorting) 
+(3) the diagrams (the easiest way to draw them is by using Microsoft Excel Worksheet) and 
+(4) a document file describing your solution. 
+The solution description document should include the following elements: 
+justification for the added statements (to ones that increment the counters), 
+interpretation of the diagrams and lessons learned. 
+The size of the document should be of 1-2 pages, single spaced, font size 12. 
+All solution description elements should be properly formatted using APA style.
+
+Wrap all the files in a single .zip archive and name it Hw2_your_name.zip (if I were you, it would be Hw2_Rodica_Potolea.zip).

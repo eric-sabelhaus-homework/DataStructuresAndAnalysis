@@ -1,6 +1,4 @@
 package Project1_Eric_Sabelhaus;
-import static org.junit.Assert.*;
-import junit.framework.AssertionFailedError;
 
 import org.junit.Test;
 
@@ -46,7 +44,7 @@ public class TestAirportLine {
 				System.out.println(line.toS());
 				System.out.println("It has been: " + (minutes + 1) + " minutes.");
 				//put our thread to sleep for 60 seconds before iterating over the queue again.
-				Thread.sleep(60000);
+				Thread.sleep(100);
 			}
 		} catch (InterruptedException e) {
 			//print stack if exception occurs during runtime
@@ -56,6 +54,7 @@ public class TestAirportLine {
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void testGuardFailing(){
+		@SuppressWarnings("unused")
 		SecurityGuard failGuard = new SecurityGuard(0);
 		SecurityGuard passGuard = new SecurityGuard(1);
 		passGuard.setNumberPersons(0);

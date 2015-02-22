@@ -1,0 +1,36 @@
+Requirements: 
+Design a circular double linked list, 
+
+for which the following operations should be implemented:
+Search for a given element in the structure
+Insert an element after some element, specified as argument
+Delete an element specified as argument
+List all the elements present in the double linked list. 
+
+
+Approach: 
+You should show the functionality by repeatedly inserting a few (at least 5) elements, 
+followed by at least one search and one delete operation. 
+
+After each operation performed, display the elements in the list. 
+
+The elements should be displayed either in the output window of the IDE, or in a GUI 
+(however, designing a GUI is not mandatory; your work is considered for full grade without a GUI).
+ 
+Deliverables: 
+You should submit 
+(1) the souce (.java) files, 
+(2) an output sample (screenshot showing program execution and the results of your testing) and 
+(3) a document file describing your solution. 
+The solution description document should include the following elements: 
+a short problem analysis, 
+main design decisions, 
+user interface, 
+testing and test cases, 
+error handling
+lessons learned. 
+ 
+The size of the document should be of 1-2 pages, single spaced, 
+font size 12. All solution description elements should be properly formatted using APA style.
+ 
+Wrapp all the files in a single .zip archive and name it Hw3_your_name.zip (if I were you, it would be Hw3_Rodica_Potolea.zip).

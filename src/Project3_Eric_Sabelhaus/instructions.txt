@@ -1,0 +1,53 @@
+Requirements: 
+implement methods for the following BST operations: 
+search, 
+insert, 
+tree-traversal (pre, in, and post orders), 
+count (leaves, internal nodes), 
+height.
+
+Approach: you may start from the BST in our textbook 
+(Figure 7.25: Listing of the Implementation of a Binary Search Tree Structure in 
+Sorting Data Structures and Algorithms Using Java by William McAllister) 
+for any available methods, and implement only the new ones. 
+Generate a BST by repeatedly inserting at least 20 keys (starting from an empty tree). 
+Then, perform the following operations in the prescribed order showing the results 
+after each of the following operations (or implement a menu with choices. 
+It doesn’t have to be a GUI. 
+Displaying the menu and the results in the output window of the IDE is fine):
+
+in-order traversal;
+search for an existing key;
+search for a key that does not belong to the BST;
+calculate the height;
+count the leaves;
+count the internal nodes;
+insert a new key;
+calculate the height;
+inorder traversal;
+preorder traversal;
+postorder traversal;
+count the leaves;
+count the internal nodes;
+
+Deliverables: 
+You should submit 
+(1) all the source (.java) files, 
+(2) an output sample (screenshot with program execution 
+showing the required functionality) and 
+(3) a document file describing your solution. 
+The solution description document should include the following elements: 
+a short problem analysis, 
+main design decisions, 
+assumptions, 
+description of classes, 
+user interface, 
+testing and test cases, 
+error handling and 
+lessons learned. 
+
+The size of the document should be of 3 pages, single spaced, font size 12. 
+All solution description elements should be properly formatted using APA style.
+                                                   
+Wrapp all the files in a single .zip archive and name it Project3_your_name.zip 
+(if I were you, it would be Project3_Rodica_Potolea.zip).
