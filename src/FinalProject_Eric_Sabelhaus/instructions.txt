@@ -1,0 +1,78 @@
+DepthFirstSearch (DFS) :  parent node; discovery/finishing time; parenthesis theorem.
+
+Requirements: 
+implement/update specific methods for the DFS of a graph; 
+for at least 2 graphs (1 being the provided one), 
+show the DFS order of vertices in the graph, 
+and for each node, specify its parent node in the search 
+(the node from which the currect node was reached). 
+
+Moreover, display for each node the discovery and finishing time, 
+to check that the Parenthesis Theorem holds true.
+
+Approach:
+You may start from the DFT in the textbook and do the appropriate changes. 
+For counting the dfs time, you should set a global counter (let’s name it time), 
+which is set to 0 in the moment the search starts with the root vertex. 
+At any moment the search starts with a new vertex (that is, just after entering a new dfs) 
+the counter has to be incremented by one; 
+also it has to be incremented by one when the search from the current node ends 
+(just before exit a dfs). 
+For each node, 
+calculate also the discovery and finishing time; 
+for doing this, you may use two arrays (let’s name them d[] for discovery and f[] for finishing). 
+The discovery time of a given vertex v receives the value of the counter 
+just when enter to the dfs for that vertex 
+(that is d[v]=time, after incrementing time), 
+and the finishing just before exit from that dfs 
+(that is f[v]=time, before incrementing time).
+
+Parentheses Theorem: 
+In any depth first search, 
+for any 2 vertices u and v, 
+one of the following 3 conditions holds true:
+
+The intervals [d[u], f[u]] and [d[v], f[v]] are completely disjoint;
+
+The [d[u], f[u]]  interval is completely contained within interval [d[v], f[v]], and u is a descendant of v in the dfs tree;
+
+The [d[v], f[v]] interval is completely contained within interval [d[u], f[u]], and v is a descendant of u in the dfs tree;
+
+Design and implement a driver to show the following (check for 2 graphs; 1 is provided, including the starting vertex):
+
+Display the dfs starting from a specified vertex;
+Display the discovery/finishing time for each node in the graph;
+Show the Parentheses Theorem holds true, by mentioning the specific condition in each case 
+(this has to me manually calculated and added in the documentation).
+Input data: 
+You should test your application and include the tests in your documentation for at least two graphs; 
+one is mandatory to be this one provided below. 
+It is represented in the G = (V, E) representation, 
+where V is the vertices set, and E is the edges set. 
+Please note that our graph is a directed one 
+(that is edges have directions, thus, the presence of an (u, v) edge does not imply 
+(v, u) is also present in the graph). 
+Nevertheless, this has no impact on the algorithm and its implementation. 
+The dfs should start with vertex 1.
+
+V= {1, 2, 3, 4, 5, 6, 7}          
+
+E= {{1, 2}, {1, 6}, {2, 3}, {2, 4}, {2, 5}, {3, 5}, {4, 5}, {5, 1},{6, 4}, {6, 7}}
+
+Deliverables: 
+You should submit 
+(1) all the source (.java) files, 
+(2) a screenshot sample file (the output displayed while running your application to show the required functionalities) and 
+(3) a documentation file. 
+It should contain the 
+design decisions, 
+test plan, 
+the output for the two runs, 
+and the condition met by the Parentheses Theorem in each case. 
+The documentation should be no more than five pages in length and no less than two pages. 
+The font size should be 12 point, 
+the page margins one inch, 
+and the paragraphs formatted with single spaced. 
+Any figures, tables, equations, and references should be properly labeled and formatted using APA style.
+
+Wrapp all the files in a single .zip archive and name it FinalProject_your_name.zip (if I were you, it would be FinalProject_Rodica_Potolea.zip).

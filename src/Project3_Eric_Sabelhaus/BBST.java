@@ -226,7 +226,7 @@ public class BBST<E> {
     // recursively count height of tree
     private int height(Node<E> node) {
         if (node == null) {
-        	return -1;
+        	return 0;
         }
         return 1 + Math.max(height(node.getL()), height(node.getR()));
     }
