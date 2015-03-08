@@ -1,0 +1,65 @@
+Beginning DFS of pre-selected data
+Discovered 1 at 1
+Parent: 1 Child: 5
+Discovered 5 at 2
+Parent: 5 Child: 4
+Discovered 4 at 3
+Parent: 4 Child: 6
+Discovered 6 at 4
+Parent: 6 Child: 7
+Discovered 7 at 5
+Finished 7 at 6
+Finished 6 at 7
+Parent: 4 Child: 2
+Discovered 2 at 8
+Parent: 2 Child: 3
+Discovered 3 at 9
+Finished 3 at 10
+Finished 2 at 11
+Finished 4 at 12
+Finished 5 at 13
+Finished 1 at 14
+
+Vertices 	Discovery 	Finish
+1		1		14
+2		8		11
+3		9		10
+4		3		12
+5		2		13
+6		4		7
+7		5		6
+
+Completed DFS of pre-selected data
+
+Beginning DFS of randomly generated data
+Discovered 1 at 1
+Parent: 1 Child: 5
+Discovered 5 at 2
+Parent: 5 Child: 4
+Discovered 4 at 3
+Parent: 4 Child: 3
+Discovered 3 at 4
+Parent: 3 Child: 6
+Discovered 6 at 5
+Finished 6 at 6
+Finished 3 at 7
+Finished 4 at 8
+Parent: 5 Child: 2
+Discovered 2 at 9
+Parent: 2 Child: 7
+Discovered 7 at 10
+Finished 7 at 11
+Finished 2 at 12
+Finished 5 at 13
+Finished 1 at 14
+
+Vertices 	Discovery 	Finish
+1		1		14
+2		9		12
+3		4		7
+4		3		8
+5		2		13
+6		5		6
+7		10		11
+
+Completed DFS of randomly generated data

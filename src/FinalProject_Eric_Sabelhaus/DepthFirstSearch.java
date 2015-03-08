@@ -57,6 +57,7 @@ public class DepthFirstSearch {
     	d[i] = time;
     	for(int j : myGraph.adj(i)) {
     		if (white[j] == true){
+    			System.out.println("Parent: " + i + " Child: " + j);
     			dfsVisit(j);
     		}
     	}
