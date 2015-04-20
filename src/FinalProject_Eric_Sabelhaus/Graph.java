@@ -1,4 +1,4 @@
-package FinalProject_Eric_Sabelhaus;
+package inalProject_Eric_Sabelhaus;
 
 public class Graph {
 	private final int vertices;
@@ -20,7 +20,7 @@ public class Graph {
 		return vertices;
 	}
 	
-	public Iterable<Integer> adj(int v) {
+	ublic Iterable<Integer> adj(int v) {
         validateVertex(v);
         return graph[v];
     }
@@ -48,4 +48,3 @@ public class Graph {
 		return edges;
 	}
 	
-}
