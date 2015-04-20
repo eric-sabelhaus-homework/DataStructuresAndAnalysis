@@ -6,7 +6,7 @@ public class Graph {
 	private Multiset<Integer>[] graph;
 	
 	@SuppressWarnings("unchecked")
-	public Graph(int i) {
+	public Graph(int i) 
 		if (i < 1) throw new IllegalArgumentException("Cannot have negative vertices");
 		this.vertices = i;
         this.edges = 0;
@@ -14,7 +14,7 @@ public class Graph {
         for (int j = 1; j < i+1; j++) {
             graph[j] = new Multiset<Integer>();
         }
-	}
+	
 	
 	public int getVertices() {
 		return vertices;
@@ -26,7 +26,7 @@ public class Graph {
     }
 	
     // throw an IndexOutOfBoundsException unless 0 <= v < V
-    private void validateVertex(int v) {
+    public static void validateVertex(int v) {
         if (v < 0 || v > vertices)
             throw new IndexOutOfBoundsException("vertex " + v + " is not between 0 and " + (vertices-1));
     }
